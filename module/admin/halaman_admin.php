@@ -116,10 +116,10 @@
 				<div class="col-lg-8 mb-5 mb-lg-0">
 					<div class="blog_left_sidebar">
 						<article class="blog_item">
-        				    <div class="blog_details bg-white">						
-							    <h2>Selamat datang <b><?php echo $_SESSION['username']; ?></b></h2>
-					            <p>E-Pemilu merupakan aplikasi <i>elektronic voting</i></p>
-                                <p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b></p>
+        				    <div class="blog_details bg-white">	
+                                <h2><font  color="black" face="century gothic"><i>Selamat datang</i> <b><?php echo $_SESSION['username']; ?></font></b></h2>
+                            	<p>E-Voting atau <i>Electronic Voting</i> merupakan aplikasi karya anak bangsa yang dimanfaatkan untuk Pemilihan Umum Serentak Tahun 2019</p>
+                           		<p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
                                 <br>
                                 <br>
                                 <br>
@@ -136,7 +136,9 @@
 				<div class="col-lg-4">
 					<div class="blog_right_sidebar">
 						<aside class="single_sidebar_widget post_category_widget">
-							<h4 class="widget_title">Administrator</h4>
+                            <center>
+                                <h4 class="widget_title"><font  color="black" face="century gothic">PENGELOLAAN</font></h4>
+                            </center>
 						    <ul class="list cat-list">
 							    <li>
 									<a href="#" class="d-flex">

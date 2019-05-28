@@ -168,7 +168,7 @@
           <div class="col-lg-8 mb-5 mb-lg-0">
             <div class="blog_left_sidebar">
 					  	<article class="blog_item">
-        	      <div class="blog_details  bg-white">	<h2>Tambah DPT</b></h2>
+        	      <div class="blog_details  bg-white"><h2><font color="black" face="century gothic">Tambah <b><i>Daftar Pemilih Tetap</i></b></font></h2>
 					        <br>
                   <br>
                   <form action="processadd.php?act=insert" method="post" name="form1">
@@ -228,8 +228,10 @@
 				<div class="col-lg-4">
 					<div class="blog_right_sidebar">
 						<aside class="single_sidebar_widget post_category_widget">
-            <h4 class="widget_title">Administrator</h4>
-              <ul class="list cat-list">
+              <center>
+                <h4 class="widget_title"><font  color="black" face="century gothic">PENGELOLAAN</font></h4>
+              </center>
+						    <ul class="list cat-list">
                 <li>
                   <a href="#" class="d-flex">
                     <p>Resaurant food</p>
@@ -258,21 +260,21 @@
 	<!--::breadcrumb part start::-->
 
 	<!-- footer part start-->
-    <footer class="copyright_part">
-        <div class="container">
-            <div class="row align-items-center">
-                <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<footer class="copyright_part">
+    <div class="container">
+        <div class="row align-items-center">
+            <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | MelekTech </a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
-                    <a href="#"><i class="ti-facebook"></i></a>
-                    <a href="#"> <i class="ti-twitter"></i> </a>
-                    <a href="#"><i class="ti-instagram"></i></a>
-                    <a href="#"><i class="ti-skype"></i></a>
-                </div>
+            <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"> <i class="ti-twitter"></i> </a>
+                <a href="#"><i class="ti-instagram"></i></a>
+                <a href="#"><i class="ti-skype"></i></a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
     <!-- footer part end-->
 
     <!-- jquery plugins here-->
@@ -297,6 +299,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="../../asset/js/swiper.min.js"></script>
     <!-- custom js -->
     <script src="../../asset/js/custom.js"></script>
-    
+
 </body>
 </html>

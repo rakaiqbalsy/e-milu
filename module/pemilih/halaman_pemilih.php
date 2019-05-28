@@ -117,7 +117,7 @@
 						<article class="blog_item">
 							<div class="blog_details  bg-white">
                             	<h2><font  color="black" face="century gothic"><i>Selamat datang</i> <b><?php echo $_SESSION['nik']; ?></font></b></h2>
-                            	<p>E-Pemilu merupakan aplikasi <i>elektronic voting</i></p>
+                            	<p>E-Voting atau <i>Electronic Voting</i> merupakan aplikasi karya anak bangsa yang dimanfaatkan untuk Pemilihan Umum Serentak Tahun 2019</p>
                            		<p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
 								<br>
 								<br>
