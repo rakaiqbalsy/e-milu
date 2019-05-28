@@ -142,20 +142,17 @@
 						    <ul class="list cat-list">
 							    <li>
 									<a href="#" class="d-flex">
-									  <p>Resaurant food</p>
-									  <p>(37)</p>
+									  <p>Daftar Jumlah Pemilih Tetap (100)</p>
 						    		</a>
 								</li>
 								<li>
 								    <a href="#" class="d-flex">
-									  <p>Travel news</p>
-									  <p>(10)</p>
+									  <p>Data Masuk (30)</p>
 								    </a>
 								</li>
 								<li>
 									<a href="#" class="d-flex">
-									   <p>Modern technology</p>
-									   <p>(03)</p>
+									   <p>Daftar Pemilih Cadangan (5)</p>
 								    </a>
                                 </li>  
 							</ul>
