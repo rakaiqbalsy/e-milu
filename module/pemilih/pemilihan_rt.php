@@ -155,7 +155,7 @@
                                             </div>
                                         <?php } ?>
                                     </div>
-                                    <form class="pilih">
+                                    <form class="pilih" action="prosesrt.php?act=insert" method="post">
                                         <div class="row">
                                             <div class="col-md-4 offset-sm-1">
                                                 <input type='radio' class="primary-radio" name='pilihan' value='01'>
@@ -165,7 +165,7 @@
                                             </div>
                                         </div>
                                         <br>
-                                        <input type="submit" class="genric-btn primary circle" value="KIRIM SUARA"></td>
+                                        <input type="submit" class="genric-btn primary circle" name="simpan" value="KIRIM SUARA"></td>
                                     </form>   
                                 </center>
                                 <br>

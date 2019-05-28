@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>E-Voting | Surat Suara Pemilihan RW</title>
+    <title>E-Voting | Surat Suara Pemilihan RT</title>
     <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../asset/css/bootstrap.min.css">
@@ -37,7 +37,6 @@
             header("location:../../../index.php?pesan=gagal");
         }
     ?>
-
 
     <!--::header part start::-->
     <header class="header_area">
@@ -110,79 +109,63 @@
             </div>
         </div>
     </header>
-	<!-- Header part end-->
+    <!-- Header part end-->
 
-    <section class="breadcrumb breadcrumb_bg">
-		<div class="container">
+
+    <section class="breadcrumbpir breadcrumb_bg">
+        <div class="container">
             <br>
-			<div class="row">
-				<div class="col-lg-12 mb-5 mb-lg-0">
-					<div class="blog_left_sidebar">
-						<article class="blog_item">
-					    	<div class="blog_details  bg-white">
+            <div class="row">
+                <div class="col-lg-12 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+                        <article class="blog_item">
+                            <div class="blog_details bg-white">
                                 <center>
+                                    <?php
+                                        $id_dpt = $_SESSION['id_dpt'];
+                                        $query = mysqli_query($koneksi, "SELECT * FROM dpt as A JOIN user as B ON A.id_dpt = B.id_dpt WHERE A.id_dpt = $id_dpt" );
+                                        $data = mysqli_fetch_assoc($query);
+                                    ?>
                                     <h1><b><font face="century gothic">SURAT SUARA PEMILIHAN UMUM</font></b></h1>
                                     <h2><font face="century gothic">KETUA RW 01 TAHUN 2019</font></h2>
-                                    <br>
-                                    <br>
+                                    <div class="row">
+                                        <br>
+                                        <br>
+                                        <?php
 
-                                    <?php
-                                        $query = mysqli_query($koneksi,"SELECT * from calon_rw ORDER BY id_calonrw ASC");
-                                         while ($data = mysqli_fetch_assoc($query)) {
-                                            $nama = $data['nama'];
-                                            $no_urut = $data['no_urut'];
-                                            $visi = $data['visi'];
-                                            $misi = $data['misi'];
-                                            $foto = $data['foto']; ?>
-                                    <table>
-                                        <tr>
-                                            <td align="center"><div class="card"><h1><b><font face="century gothic" color="black"><?php echo $no_urut; ?></font></b></h1></div></td>
-                                            <td>&nbsp;</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
+                                            $id_dpt = $_SESSION['id_dpt'];
+
+                                            $query = mysqli_query($koneksi,"SELECT * from calon_rw");
+                                            while ($data = mysqli_fetch_assoc($query)) {
+                                                $nama = $data['nama'];
+                                                $no_urut = $data['no_urut'];
+                                                $visi = $data['visi'];
+                                                $misi = $data['misi'];
+                                                $foto = $data['foto']; ?>
+                                            <div class="col-md-4 offset-sm-1">
                                                 <div class="card">
-                                                    <a>
-                                                        <img src="../../asset/img/<?php echo $foto; ?>" alt="blog" width="300">
-                                                    </a>
+                                                    <img src="../../asset/img/<?php echo $foto; ?>" class="card-img-top" alt="gambar"  width="150px" height="400px">
                                                     <div class="card-body">
-                                                        <div class="tean_content">
-                                                            <center>
-                                                                <a>
-                                                                     <h5><b><font face="century gothic" color="black"><?php echo $nama; ?></font></b></h5>
-                                                                </a>
-                                                             </center>
-                                                        </div>
+                                                        <h1 class="card-title"><?php echo $no_urut; ?></h1>
+                                                        <hr>
+                                                        <h5 class="card-text"><?php echo $nama; ?></h5>
                                                     </div>
                                                 </div>
-                                             </td>
-                                        </tr>
+                                            </div>
                                         <?php } ?>
-                                        <tr>
-                                            <td>
-                                                <form>
-                                                    <center>
-                                                            <input type='radio' class="primary-radio" name='pilihan' value='01'>
-                                                    </center>
-                                            </td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>
-                                                    <center>
-                                                        <input type='radio' class="primary-radio" name='pilihan' value='02'>
-                                                    </center>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="6">
-                                                <center>
-                                                    <input type="submit" class="genric-btn primary circle" value="KIRIM SUARA"></td>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                    </div>
+                                    <form class="pilih" action="prosesrw.php?act=insert" method="post">
+                                        <div class="row">
+                                            <div class="col-md-4 offset-sm-1">
+                                                <input type='radio' class="primary-radio" name='pilihan' value='01'>
+                                            </div>
+                                            <div class="col-md-4 offset-sm-1">
+                                                <input type='radio' class="primary-radio" name='pilihan' value='02'>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <input type="submit" name="simpan" class="genric-btn primary circle" value="KIRIM SUARA"></td>
+                                    </form>   
                                 </center>
                                 <br>
                                 <br>
@@ -190,14 +173,16 @@
                                 <br>
                                 <br>
                                 <br>
-						    </div>
-						</article>
-					</div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-			</div>
-		</div>
-	</section>
+            </div>
+        </div>
+    </section>
     
+<!-- footer part start-->
+
 <!-- footer part start-->
 
 <footer class="copyright_part">
