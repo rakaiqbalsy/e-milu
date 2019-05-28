@@ -116,7 +116,7 @@
 				<div class="col-lg-8 mb-5 mb-lg-0">
 					<div class="blog_left_sidebar">
 						<article class="blog_item">
-        				  <div class="blog_details">
+						<div class="blog_details  bg-white">
                             <h2>Selamat datang <b><?php echo $_SESSION['nik']; ?></b></h2>
                             <p>E-Pemilu merupakan aplikasi <i>elektronic voting</i></p>
                             <p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
@@ -128,7 +128,8 @@
                             <br>
                             <br>
                             <br>
-							<a href="../../logout.php">LOGOUT</a>
+							<a href="../../logout.php" class="genric-btn danger">LOGOUT</a>
+              
 						  </div>
 						</article>
 					</div>
@@ -136,27 +137,14 @@
 				<div class="col-lg-4">
 					<div class="blog_right_sidebar">
 						<aside class="single_sidebar_widget post_category_widget">
-							<h4 class="widget_title">Administrator</h4>
-						    <ul class="list cat-list">
-							    <li>
-									<a href="#" class="d-flex">
-									  <p>Resaurant food</p>
-									  <p>(37)</p>
-						    		</a>
-								</li>
-								<li>
-								    <a href="#" class="d-flex">
-									  <p>Travel news</p>
-									  <p>(10)</p>
-								    </a>
-								</li>
-								<li>
-									<a href="#" class="d-flex">
-									   <p>Modern technology</p>
-									   <p>(03)</p>
-								    </a>
-                                </li>  
-							</ul>
+							<h4 class="widget_title">Surat Suara</h4>
+						    <center>
+									<a href="pemilihan_rw.php" class="genric-btn warning radius"><h1>Pemilihan RW<h1></a>
+								
+								    <a href="pemilihan_rt.php" class="genric-btn success radius"><h1>Pemilihan RT<h1></a>
+								
+		</center>
+                           
 						</aside>
 					</div>
 				</div>

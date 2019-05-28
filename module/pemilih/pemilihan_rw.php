@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>E-Voting | Petugas</title>
+    <title>E-Voting | Surat Suara Pemilihan RW</title>
     <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../asset/css/bootstrap.min.css">
@@ -48,7 +48,6 @@
                   <div class="col-md-8 col-xl-6">
                       <div class="sub_header_social_icon float-right">
                         <a href="#"><i class="flaticon-phone"></i>+62 857 2160 3080</a>
-                        <a href="adduser.php" class="register_icon"><i class="ti-arrow-right"></i>TAMBAH DPT</a>
                       </div>
                     </div>
                 </div>
@@ -65,7 +64,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item active">
-                                        <a class="nav-link active" href="halaman_admin.php">Beranda</a>
+                                        <a class="nav-link active" href="halaman_pemilih.php">Beranda</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -114,56 +113,89 @@
 	<section class="breadcrumb breadcrumb_bg">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 mb-5 mb-lg-0">
+				<div class="col-lg-12 mb-5 mb-lg-0">
 					<div class="blog_left_sidebar">
 						<article class="blog_item">
-        				<div class="blog_details  bg-white">
-													
-								<h2>Selamat datang <b><?php echo $_SESSION['username']; ?></b></h2>
-					          <p>E-Pemilu merupakan aplikasi <i>elektronic voting</i></p>
-                           <p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
-				><br>
+						<div class="blog_details  bg-white">
+                            <center>
+                            <font face="century gothic">
+                            <h1><b><font face="century gothic">SURAT SUARA PEMILIHAN UMUM</font><b></h1>
+                            <h2><font face="century gothic">KETUA RW 00 TAHUN 2019</font></h2>
                             <br>
                             <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-														<a href="../../logout.php" class="genric-btn warning">LOGOUT</a>
-              
-					</div>
 
+<!-- Disini datanya-->
+
+<table>
+    <tr>
+        <td align="center"><h1><b><font face="century gothic" color="black">01</font></b></h1></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td align="center"><h1><b><font face="century gothic" color="black">02</font></b></h1></td>
+        </tr>
+        <tr>
+        <td>
+
+               
+                     <div class="card">
+                     <a href="#">
+                        <img src="../../asset/img/team/team_1.png" alt="blog" width="300">
+        </a>
+                        <div class="card-body">
+                           <div class="tean_content">
+                            <center>
+                              <a href="#">
+                              <font face="century gothic" color="black">PROF. DR. ADITIA WARDANI, ST,. MT.</font>
+                              </a>
+        </center>
+                           </div>
+                        </div>
+                     </div>
+                    
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>
+      
+                     <div class="card">
+                     <a href="#">
+                        <img src="../../asset/img/team/team_2.png" alt="blog" width="300">
+                        <div class="card-body">
+        </a>
+                        <div class="tean_content">
+                        <center>
+                              <a href="#">
+                              <font face="century gothic" color="black">PROF. DR. Raka Iqbal SY, ST,. M.KOM.</font>
+                              </a>
+        </center>
+                           </div>
+                        </div>
+                     </div>
+                 
+        </td>
+        </tr>
+        </table>
+             
+        </center>
+
+
+
+
+
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+        
+						
+						  </div>
 						</article>
 					</div>
                 </div>
-				<div class="col-lg-4">
-					<div class="blog_right_sidebar">
-						<aside class="single_sidebar_widget post_category_widget">
-							<h4 class="widget_title">Administrator</h4>
-						    <ul class="list cat-list">
-							    <li>
-									<a href="#" class="d-flex">
-									  <p>Resaurant food</p>
-									  <p>(37)</p>
-						    		</a>
-								</li>
-								<li>
-								    <a href="#" class="d-flex">
-									  <p>Travel news</p>
-									  <p>(10)</p>
-								    </a>
-								</li>
-								<li>
-									<a href="#" class="d-flex">
-									   <p>Modern technology</p>
-									   <p>(03)</p>
-								    </a>
-                                </li>  
-							</ul>
-						</aside>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
