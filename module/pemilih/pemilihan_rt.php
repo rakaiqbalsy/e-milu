@@ -128,11 +128,11 @@
 
 <table>
     <tr>
-        <td align="center"><h1><b><font face="century gothic" color="black">01</font></b></h1></td>
+        <td align="center"><div class="card"><h1><b><font face="century gothic" color="black">01</font></b></h1></div></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
-        <td align="center"><h1><b><font face="century gothic" color="black">02</font></b></h1></td>
+        <td align="center"><div class="card"><h1><b><font face="century gothic" color="black">02</font></b></h1></div></td>
         </tr>
         <tr>
         <td>
