@@ -150,7 +150,7 @@
 		</tr>
 		<tr>
 			<td><div class="card">
-								    <a href="pemilihan_rt.php" class="genric-btn primary radius"><h1>Pemilihan RT</h1></a>
+								    <a href="verifikasi_rt.php" class="genric-btn primary radius"><h1>Pemilihan RT</h1></a>
 									</div></td>
 		</tr>
 		</table>

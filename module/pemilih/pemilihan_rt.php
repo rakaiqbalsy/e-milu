@@ -27,6 +27,9 @@
 <body>
 
         <?php 
+
+        	include_once("../../config/koneksi.php");
+
             session_start();
             // cek apakah yang mengakses halaman ini sudah login
             if($_SESSION['level']==""){
@@ -120,7 +123,13 @@
                             <center>
                             <font face="century gothic">
                             <h1><b><font face="century gothic">SURAT SUARA PEMILIHAN UMUM</font><b></h1>
-                            <h2><font face="century gothic">KETUA RT 00 RW 00 TAHUN 2019</font></h2>
+                            
+                            <?php
+                            	$id_dpt = $_SESSION['id_dpt'];
+                            	$query = mysqli_query($koneksi, "SELECT * FROM dpt as A JOIN user as B ON A.id_dpt = B.id_dpt WHERE A.id_dpt = $id_dpt" );
+                            	$data = mysqli_fetch_assoc($query);
+                            ?>
+                            <h2><font face="century gothic">KETUA <?php echo $data['nama_dpt'];?> RW 01 TAHUN 2019</font></h2>
                             <br>
                             <br>
 
