@@ -141,7 +141,7 @@
 									<tr>
 										<td>
 											<div class="card">
-												<a href="pemilihan_rw.php" class="genric-btn danger radius"><h2><font  color="white" face="century gothic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R W &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></h2></a>
+												<a href="verifikasi_rw.php" class="genric-btn danger radius"><h2><font  color="white" face="century gothic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R W &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></h2></a>
 											</div>
 										</td>
 									</tr>

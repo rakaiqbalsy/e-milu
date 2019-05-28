@@ -1,6 +1,6 @@
 <?php 
 
-        	include_once("../../config/koneksi.php");
+            include_once("../../config/koneksi.php");
 
             session_start();
             // cek apakah yang mengakses halaman ini sudah login
@@ -10,12 +10,12 @@
 
             $id_user = $_SESSION['id_user'];
 
-           $cek    = mysqli_num_rows(mysqli_query($koneksi,"SELECT id_user, status_rt FROM pilihan WHERE id_user='$id_user' AND status_rt = 1"));
+           $cek    = mysqli_num_rows(mysqli_query($koneksi,"SELECT id_user, status_rw FROM pilihan WHERE id_user='$id_user' AND status_rw = 1"));
             if ($cek > 0){
                 echo "<script>window.alert('Anda Sudah Mendaftar')
                         window.location='halaman_pemilih.php'</script>";
             }else {
-                header("Location:pemilihan_rt.php");
+                header("Location:pemilihan_rw.php");
             }
 
-		?>
+        ?>
