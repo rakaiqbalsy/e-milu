@@ -139,7 +139,6 @@
 								<h4 class="widget_title"><font  color="black" face="century gothic">SURAT SUARA PEMILIHAN</font></h4>
 								<table>
 									<tr>
-<<<<<<< HEAD
 										<td>
 											<div class="card">
 												<a href="pemilihan_rw.php" class="genric-btn danger radius"><h2><font  color="white" face="century gothic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R W &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></h2></a>
@@ -152,7 +151,7 @@
 									<tr>
 										<td>
 											<div class="card">
-								    			<a href="pemilihan_rt.php" class="genric-btn success sradius"><h2><font color="white" face="century gothic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R T &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></h2></a>
+								    			<a  href="verifikasi_rt.php" class="genric-btn success sradius"><h2><font color="white" face="century gothic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R T &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></h2></a>
 											</div>
 										</td>
 									</tr>
@@ -176,23 +175,6 @@
 									<td><i><font size="1">Segala kecurangan akan ditindak sesuai undang-undang.</font></i></td>
 								</tr>
 							</table>
-=======
-									<td><div class="card">
-									<a href="pemilihan_rw.php" class="genric-btn warning radius"><h1>Pemilihan RW</h1></a>
-		</div></td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td><div class="card">
-								    <a href="verifikasi_rt.php" class="genric-btn primary radius"><h1>Pemilihan RT</h1></a>
-									</div></td>
-		</tr>
-		</table>
-		</center>
-                           
->>>>>>> 26ce95761e189f9c477de901e5da50ca8a93941f
 						</aside>
 					</div>
 				</div>
