@@ -133,25 +133,37 @@
     
                                     <br>
                                     <br>
+
+                                    <?php
+
+                                        $id_dpt = $_SESSION['id_dpt'];
+
+                                        $query = mysqli_query($koneksi,"SELECT * from calon_rt as A WHERE id_dpt = $id_dpt");
+                                         while ($data = mysqli_fetch_assoc($query)) {
+                                            $nama = $data['nama'];
+                                            $no_urut = $data['no_urut'];
+                                            $visi = $data['visi'];
+                                            $misi = $data['misi'];
+                                            $id_dpt = $data['id_dpt'];
+                                            $foto = $data['foto']; ?>
                                     <table>
                                         <tr>
-                                            <td align="center"><div class="card"><h1><b><font face="century gothic" color="black">01</font></b></h1></div></td>
+                                            <td align="center"><div class="card"><h1><b><font face="century gothic" color="black"><?php echo $no_urut; ?></font></b></h1></div></td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
-                                            <td align="center"><div class="card"><h1><b><font face="century gothic" color="black">02</font></b></h1></div></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="card">
                                                     <a>
-                                                        <img src="../../asset/img/calon_1.jpg" alt="blog" width="300">
+                                                        <img src="../../asset/img/<?php echo $foto; ?>" alt="blog" width="300">
                                                     </a>
                                                     <div class="card-body">
                                                         <div class="tean_content">
                                                             <center>
                                                                 <a>
-                                                                     <h5><b><font face="century gothic" color="black">Ir. H. JOKO WIDODO</font></b></h5>
+                                                                     <h5><b><font face="century gothic" color="black"><?php echo $nama; ?></font></b></h5>
                                                                 </a>
                                                              </center>
                                                         </div>
@@ -161,23 +173,8 @@
                                             <td>&nbsp;</td>
                                             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                             <td>&nbsp;</td>
-                                            <td>
-                                                <div class="card">
-                                                    <a>
-                                                        <img src="../../asset/img/calon_2.jpg" alt="blog" width="300">
-                                                    </a>
-                                                    <div class="card-body">
-                                                        <div class="tean_content">  
-                                                            <center>
-                                                                <a>        
-                                                                    <h5><b><font face="century gothic" color="black">H. PRABOWO SUBIANTO</font></b></h5>
-                                                                </a>
-                                                            </center>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                             </td>
                                         </tr>
+                                    <?php } ?>
                                         <tr>
                                             <td>
                                                 <form>
