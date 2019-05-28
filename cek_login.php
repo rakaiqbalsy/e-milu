@@ -38,6 +38,8 @@ if($cek > 0){
 		// buat session login dan username
 		$_SESSION['nik'] = $username;
 		$_SESSION['level'] = "pemilih";
+		$_SESSION['id_user'] = $data['id_user'];
+		$_SESSION['id_dpt'] = $data['id_dpt'];
 		// alihkan ke halaman dashboard user
 		header("location:module/pemilih/halaman_pemilih.php");
 
