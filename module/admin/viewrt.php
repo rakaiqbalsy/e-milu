@@ -115,42 +115,120 @@
 <!-- Header part end-->
 
 <!-- Content -->
-<section class="breadcrumb">
+<section class="breadcrumbrt">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <!-- <div class="col-lg-12">
                     <div class="breadcrumb_iner">
-                        <div class="breadcrumb_iner_item">
+                        <div class="breadcrumb_iner_item"> -->
                             <!-- <div class="col-lg-8 col-md-8"> -->
+                                <div class="col-md-12">
+                                    <h1 class="calon">Calon Ketua RT.01</h1>
+                                    <hr>
+                                </div>
                                 <?php
-                                $query = mysqli_query($koneksi,"SELECT * from calon_rt ORDER BY id_dpt ASC");
+                                $query = mysqli_query($koneksi,"SELECT * from calon_rt WHERE id_dpt=1");
                                 while ($data = mysqli_fetch_assoc($query)) {
                                     $nama = $data['nama'];
                                     $no_urut = $data['no_urut'];
                                     $visi = $data['visi'];
                                     $misi = $data['misi'];
                                     $foto = $data['foto']; ?>
-
-                                    <div class="col-sm-4 mb-4">
+                                    
+                                    <div class="col-md-4 offset-sm-1">
                                         <div class="card">
-                                            <img src="../../asset/img/<?php echo $foto; ?>" class="card-img-top" alt="gambar">
+                                            <img src="../../asset/img/<?php echo $foto; ?>" class="card-img-top" alt="gambar"  width="150px" height="400px">
                                         <div class="card-body">
                                             <h1 class="card-title"><?php echo $no_urut; ?></h1>
+                                            <hr>
                                             <h5 class="card-text"><?php echo $nama; ?></h5>
-                                            <p class="card-text"><?php echo $visi; ?></p>
-                                            <p class="card-text"><?php echo $misi; ?></p>
+                                            <p class="card-text"><?php echo "Visi : ".$visi; ?></p>
+                                            <p class="card-text"><?php echo "Misi : ".$misi; ?></p>
                                         </div>
 
                                         </div>
                                     </div>
                                 <?php } ?>
                             <!-- </div> -->
-                        </div>
+                        <!-- </div>
                     </div>
-        </div>   
-    </div>
-</div>
-    
+            </div>    -->
+        </div>
+        <div class="row">
+            <!-- <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item"> -->
+                            <!-- <div class="col-lg-8 col-md-8"> -->
+                                <div class="col-md-12">
+                                    <h1 class="calon">Calon Ketua RT.02</h1>
+                                    <hr>
+                                </div>
+                                <?php
+                                $query = mysqli_query($koneksi,"SELECT * from calon_rt WHERE id_dpt=2");
+                                while ($data = mysqli_fetch_assoc($query)) {
+                                    $nama = $data['nama'];
+                                    $no_urut = $data['no_urut'];
+                                    $visi = $data['visi'];
+                                    $misi = $data['misi'];
+                                    $foto = $data['foto']; ?>
+                                    
+                                    <div class="col-md-4 offset-sm-1">
+                                        <div class="card">
+                                            <img src="../../asset/img/<?php echo $foto; ?>" class="card-img-top" alt="gambar"  width="150px" height="400px">
+                                        <div class="card-body">
+                                            <h1 class="card-title"><?php echo $no_urut; ?></h1>
+                                            <hr>
+                                            <h5 class="card-text"><?php echo $nama; ?></h5>
+                                            <p class="card-text"><?php echo "Visi : ".$visi; ?></p>
+                                            <p class="card-text"><?php echo "Misi : ".$misi; ?></p>
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            <!-- </div> -->
+                        <!-- </div>
+                    </div>
+            </div>    -->
+        </div>
+        <div class="row">
+            <!-- <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item"> -->
+                            <!-- <div class="col-lg-8 col-md-8"> -->
+                                <div class="col-md-12">
+                                    <h1 class="calon">Calon Ketua RT.03</h1>
+                                    <hr>
+                                </div>
+                                <?php
+                                $query = mysqli_query($koneksi,"SELECT * from calon_rt WHERE id_dpt=3");
+                                while ($data = mysqli_fetch_assoc($query)) {
+                                    $nama = $data['nama'];
+                                    $no_urut = $data['no_urut'];
+                                    $visi = $data['visi'];
+                                    $misi = $data['misi'];
+                                    $foto = $data['foto']; ?>
+                                    
+                                    <div class="col-md-4 offset-sm-1">
+                                        <div class="card">
+                                            <img src="../../asset/img/<?php echo $foto; ?>" class="card-img-top" alt="gambar"  width="150px" height="400px">
+                                        <div class="card-body">
+                                            <h1 class="card-title"><?php echo $no_urut; ?></h1>
+                                            <hr>
+                                            <h5 class="card-text"><?php echo $nama; ?></h5>
+                                            <p class="card-text"><?php echo "Visi : ".$visi; ?></p>
+                                            <p class="card-text"><?php echo "Misi : ".$misi; ?></p>
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            <!-- </div> -->
+                        <!-- </div>
+                    </div>
+            </div>    -->
+        </div>
+    </div>       
 </section>
 
 

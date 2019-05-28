@@ -33,6 +33,27 @@ input:hover, input:focus {
   padding: 130px 0px;
   overflow: hidden;
 }
+.breadcrumb{
+  padding: 50px;
+}
+.card{
+  height: 620px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.card-body{
+  height: 220px;
+}
+.card-body h1{
+  text-align: center;
+}
+.card-body p{
+  size: 12px;
+}
+.calon{
+  text-align: center;
+  padding: 10px;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 21, E:/166 Basketball/Basketball_Template/sass/_common.scss */
@@ -80,7 +101,6 @@ a:hover, a :hover {
 /* line 48, E:/166 Basketball/Basketball_Template/sass/_common.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #2a2a2a;
-  font-family: "Playfair Display", serif;
 }
 
 /* line 52, E:/166 Basketball/Basketball_Template/sass/_common.scss */

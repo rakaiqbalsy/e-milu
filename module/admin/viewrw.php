@@ -118,39 +118,39 @@
 <section class="breadcrumb">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                    <div class="breadcrumb_iner">
-                        <div class="breadcrumb_iner_item">
-                            <!-- <div class="col-lg-8 col-md-8"> -->
-                                <?php
-                                $query = mysqli_query($koneksi,"SELECT * from calon_rw ORDER BY id_calonrw ASC");
-                                while ($data = mysqli_fetch_assoc($query)) {
-                                    $nama = $data['nama'];
-                                    $no_urut = $data['no_urut'];
-                                    $visi = $data['visi'];
-                                    $misi = $data['misi'];
-                                    $foto = $data['foto']; ?>
+            <!-- <div class="col-lg-12"> -->
+                <!-- <div class="breadcrumb_iner"> -->
+                    <!-- <div class="breadcrumb_iner_item">  -->
+                        <!-- <div class="col-lg-8 col-md-8"> -->
+                            <?php
+                            $query = mysqli_query($koneksi,"SELECT * from calon_rw ORDER BY id_calonrw ASC");
+                            while ($data = mysqli_fetch_assoc($query)) {
+                                $nama = $data['nama'];
+                                $no_urut = $data['no_urut'];
+                                $visi = $data['visi'];
+                                $misi = $data['misi'];
+                                $foto = $data['foto']; ?>
 
-                                    <div class="col-sm-4 mb-4">
-                                        <div class="card">
-                                            <img src="../../asset/img/<?php echo $foto; ?>" class="card-img-top" alt="gambar">
-                                        <div class="card-body">
-                                            <h1 class="card-title"><?php echo $no_urut; ?></h1>
-                                            <h5 class="card-text"><?php echo $nama; ?></h5>
-                                            <p class="card-text"><?php echo $visi; ?></p>
-                                            <p class="card-text"><?php echo $misi; ?></p>
-                                        </div>
-
-                                        </div>
+                                <div class="col-md-4 offset-sm-1">
+                                    <div class="card">
+                                        <img src="../../asset/img/<?php echo $foto; ?>" class="card-img-top" alt="gambar" width="150px" height="400px">
+                                    <div class="card-body">
+                                        <h1 class="card-title"><?php echo $no_urut; ?></h1>
+                                        <hr>
+                                        <h5 class="card-text"><?php echo $nama; ?></h5>
+                                        <p class="card-text"><?php echo "Visi : ".$visi; ?></p>
+                                        <p class="card-text"><?php echo "Misi : ".$misi; ?></p>
                                     </div>
-                                <?php } ?>
-                            <!-- </div> -->
-                        </div>
-                    </div>
-        </div>   
-    </div>
-</div>
-    
+
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div>    -->
+        </div>
+    </div>    
 </section>
 
 
