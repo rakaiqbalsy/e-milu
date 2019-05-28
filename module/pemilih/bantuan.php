@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>E-Voting | Pemilih</title>
+    <title>E-Voting | Bantuan</title>
     <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../asset/css/bootstrap.min.css">
@@ -108,7 +108,7 @@
     </header>
 	<!-- Header part end-->
 
-	<section class="breadcrumbpi breadcrumb_bg">
+	<section class="breadcrumb breadcrumb_bg">
 		<div class="container">
 			<br>
 			<div class="row">
@@ -116,18 +116,23 @@
 					<div class="blog_left_sidebar">
 						<article class="blog_item">
 							<div class="blog_details  bg-white">
-                            	<h2><font  color="black" face="century gothic"><i>Selamat datang</i> <b><?php echo $_SESSION['nik']; ?></font></b></h2>
-                            	<p>E-Voting atau <i>Electronic Voting</i> merupakan aplikasi karya anak bangsa yang dimanfaatkan untuk Pemilihan Umum Serentak Tahun 2019</p>
-                           		<p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
-								<br>
-								<br>
-								<br>
-								<br>
-								<br>
-								<br>
-								<br>
-								<br>
-								<a href="../../logout.php" class="genric-btn primary radius">KELUAR</a>
+                            	<h2><font  color="black" face="century gothic"><i>Salam hangat,</i> <b><?php echo $_SESSION['nik']; ?></font></b></h2>
+                            	<p align="justify">Jika anda mengalami kendala saat menggunakan <i>Electronic Voting</i> ini anda dapat menghubungi petugas KPPS atau yang berwenang ditempat atau domisili anda, dengan senang hati kami siap melayani. <br><b>#AyoMemilih</b></p>
+                           		
+                                <h4><font  color="black" face="century gothic">Tata Cara Pemilihan RT/RW :</font></h4>
+                                    <ol>
+                                        <li>Login pada laman login E-Voting dengan memasukan NIK dan Kata Sandi</li>
+                                        <li>Masuk pada laman Surat Suara RT/RW pada menu Surat Suara di sisi kanan laman Beranda</li>
+                                        <li>Pilih salah satu calon dengan klik <i>radio button</i> dibawah foto dan nama calon RT/RW</li>
+                                        <li>Klik tombol Kirim Suara pada laman Surat Suara jika anda sudah menentukan pilihan dan yakin</li>
+                                        <li>Pastikan anda telah memilih pada dua Surat Suara yaitu RT dan RW</li>
+                                        <li>Terima kasih telah menyalurkan hak suara anda.</li>
+                                    </ol>
+                                <p><i>Untuk informasi lebih lanjut anda bisa menghubungi kontak yang tertera pada aplikasi ini</i></p>
+                                <br>
+                                <p>Demikian kami sampaikain teknis pelaksanaan pemungutan suara elekronik pada E-Voting semoga bermanfaat. Mari kita hindari golput! gunakanlah hak suara anda.</p>
+								<p><b>#PemilihBerdaulatNegaraKuat</b></p>
+                                <br>
 						  	</div>
 						</article>
 					</div>
