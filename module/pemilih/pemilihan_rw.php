@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../asset/css/flaticon.css">
     <!-- font awesome CSS -->
     <link rel="stylesheet" href="../../asset/css/magnific-popup.css">
+    <link rel="stylesheet" href="../../asset/css/nice-select.css">
     <!-- swiper CSS -->
     <link rel="stylesheet" href="../../asset/css/swiper.min.css">
     <!-- style CSS -->
@@ -132,13 +133,13 @@
                                         <tr>
                                             <td>
                                                 <div class="card">
-                                                    <a href="#">
+                                                    <a>
                                                         <img src="../../asset/img/calon_1.jpg" alt="blog" width="300">
                                                     </a>
                                                     <div class="card-body">
                                                         <div class="tean_content">
                                                             <center>
-                                                                <a href="#">
+                                                                <a>
                                                                      <h5><b><font face="century gothic" color="black">Ir. H. JOKO WIDODO</font></b></h5>
                                                                 </a>
                                                              </center>
@@ -151,13 +152,13 @@
                                             <td>&nbsp;</td>
                                             <td>
                                                 <div class="card">
-                                                    <a href="#">
+                                                    <a>
                                                         <img src="../../asset/img/calon_2.jpg" alt="blog" width="300">
                                                     </a>
                                                     <div class="card-body">
                                                         <div class="tean_content">  
                                                             <center>
-                                                                <a href="#">        
+                                                                <a>        
                                                                     <h5><b><font face="century gothic" color="black">H. PRABOWO SUBIANTO</font></b></h5>
                                                                 </a>
                                                             </center>
@@ -165,6 +166,30 @@
                                                     </div>
                                                 </div>
                                              </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <form>
+                                                    <center>
+                                                            <input type='radio' class="primary-radio" name='pilihan' value='01'>
+                                                    </center>
+                                            </td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>
+                                                    <center>
+                                                        <input type='radio' class="primary-radio" name='pilihan' value='02'>
+                                                    </center>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="6">
+                                                <center>
+                                                    <input type="submit" class="genric-btn primary circle" value="KIRIM SUARA"></td>
+                                                </center>
+                                            </td>
                                         </tr>
                                     </table>
                                 </center>

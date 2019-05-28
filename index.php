@@ -26,17 +26,16 @@
 </head>
 <body>
 
-
-<?php 
-				if(isset($_GET['pesan'])){
-					if($_GET['pesan']=="gagal"){
-						echo "<div class=notice bg=primary>
-                <a href=index.php class=close>close</a>
-                <p class=warn>Username dan Password tidak sesuai !	</p>
-              </div>";
-					}	
-				}
-			?>
+    <?php 
+        if(isset($_GET['pesan'])){
+            if($_GET['pesan']=="gagal"){
+                echo "<div class=notice bg=primary>
+        <a href=index.php class=close>close</a>
+        <p class=warn>Username dan Password tidak sesuai !	</p>
+        </div>";
+            }	
+        }
+    ?>
 
     <!--::header part start::-->
     <header class="header_area">
@@ -58,65 +57,60 @@
         </div>
         
     </header>
-	<!-- Header part end-->
 
 	<!-- Header part end-->
 
-	<section class="breadcrumb breadcrumb_bg">
-        
+	<section class="breadcrumb breadcrumb_bg"> 
 		<div class="container">
-        <br>
-<br>
-<br>
+            <br>
+            <br>
+            <br>
 			<div class="row">
-            <div class="col-lg-12 mb-5 mb-lg-0">
-            <center>
-            <div class="col-lg-4">
-					<div class="blog_right_sidebar">
-						<aside class="single_sidebar_widget post_category_widget">
-							<h4 class="widget_title">L O G I N</h4>
-                            <form class="login-form" action="cek_login.php" method="post">
-				
-								<table>
-									<tr>
-									<td><div class="card">
-										<input type="text" name="username" placeholder="Nama Pengguna"
-										 required class="single-input">
-									</div></td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td><div class="card">
-										<input type="password" name="password" placeholder="Kata Sandi"
-										 required class="single-input">
-									</div></td>
-        </tr>
-        <tr>
-            <td>&nbsp;
-</td>
-</tr>
-<tr>
-<td align="center">
-        <input type="submit" class="genric-btn primary radius" value="MASUK"></td>
-</tr>
-        </table>
-</form>
-        </center>
-        <br>
-<br>
-                           
-						</aside>
-					</div>
-                </div>
+                <div class="col-lg-12 mb-5 mb-lg-0">
+                    <center>
+                        <div class="col-lg-4">
+				        	<div class="blog_right_sidebar">
+						        <aside class="single_sidebar_widget post_category_widget">
+							        <h4 class="widget_title">L O G I N</h4>
+                                    <form class="login-form" action="cek_login.php" method="post">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <div class="card">
+                                                        <input type="text" name="username" placeholder="Nama Pengguna"
+                                                        required class="single-input">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="card">
+                                                        <input type="password" name="password" placeholder="Kata Sandi"
+                                                        required class="single-input">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center"><input type="submit" class="genric-btn primary radius" value="MASUK"></td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                    <br>
+                                    <br>
+						        </aside>
+					        </div>
+                        </div>
+                    </center>
                 </div>
             </div>
-
-		</div>
+	    </div>
 	</section>
-    
-<!-- footer part start-->
 
 <!-- footer part start-->
 
