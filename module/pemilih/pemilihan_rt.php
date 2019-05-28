@@ -112,7 +112,7 @@
 	<!-- Header part end-->
 
 
-	<section class="breadcrumb breadcrumb_bg">
+	<section class="breadcrumbpir breadcrumb_bg">
 		<div class="container">
             <br>
 			<div class="row">
@@ -121,85 +121,52 @@
 						<article class="blog_item">
 					    	<div class="blog_details bg-white">
                                 <center>
-                                    <h1><b><font face="century gothic">SURAT SUARA PEMILIHAN UMUM</font></b></h1>
-
                                     <?php
                                         $id_dpt = $_SESSION['id_dpt'];
                                         $query = mysqli_query($koneksi, "SELECT * FROM dpt as A JOIN user as B ON A.id_dpt = B.id_dpt WHERE A.id_dpt = $id_dpt" );
                                         $data = mysqli_fetch_assoc($query);
                                     ?>
-
+                                    <h1><b><font face="century gothic">SURAT SUARA PEMILIHAN UMUM</font></b></h1>
                                     <h2><font face="century gothic">KETUA <?php echo $data['nama_dpt'];?> RW 01 TAHUN 2019</font></h2>
-    
-                                    <br>
-                                    <br>
+                                    <div class="row">
+                                        <br>
+                                        <br>
+                                        <?php
 
-                                    <?php
+                                            $id_dpt = $_SESSION['id_dpt'];
 
-                                        $id_dpt = $_SESSION['id_dpt'];
-
-                                        $query = mysqli_query($koneksi,"SELECT * from calon_rt as A WHERE id_dpt = $id_dpt");
-                                         while ($data = mysqli_fetch_assoc($query)) {
-                                            $nama = $data['nama'];
-                                            $no_urut = $data['no_urut'];
-                                            $visi = $data['visi'];
-                                            $misi = $data['misi'];
-                                            $id_dpt = $data['id_dpt'];
-                                            $foto = $data['foto']; ?>
-                                    <table>
-                                        <tr>
-                                            <td align="center"><div class="card"><h1><b><font face="century gothic" color="black"><?php echo $no_urut; ?></font></b></h1></div></td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
+                                            $query = mysqli_query($koneksi,"SELECT * from calon_rt as A WHERE id_dpt = $id_dpt");
+                                            while ($data = mysqli_fetch_assoc($query)) {
+                                                $nama = $data['nama'];
+                                                $no_urut = $data['no_urut'];
+                                                $visi = $data['visi'];
+                                                $misi = $data['misi'];
+                                                $id_dpt = $data['id_dpt'];
+                                                $foto = $data['foto']; ?>
+                                            <div class="col-md-4 offset-sm-1">
                                                 <div class="card">
-                                                    <a>
-                                                        <img src="../../asset/img/<?php echo $foto; ?>" alt="blog" width="300">
-                                                    </a>
+                                                    <img src="../../asset/img/<?php echo $foto; ?>" class="card-img-top" alt="gambar"  width="150px" height="400px">
                                                     <div class="card-body">
-                                                        <div class="tean_content">
-                                                            <center>
-                                                                <a>
-                                                                     <h5><b><font face="century gothic" color="black"><?php echo $nama; ?></font></b></h5>
-                                                                </a>
-                                                             </center>
-                                                        </div>
+                                                        <h1 class="card-title"><?php echo $no_urut; ?></h1>
+                                                        <hr>
+                                                        <h5 class="card-text"><?php echo $nama; ?></h5>
                                                     </div>
                                                 </div>
-                                             </td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                        </tr>
-                                    <?php } ?>
-                                        <tr>
-                                            <td>
-                                                <form>
-                                                    <center>
-                                                            <input type='radio' class="primary-radio" name='pilihan' value='01'>
-                                                    </center>
-                                            </td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>
-                                                    <center>
-                                                        <input type='radio' class="primary-radio" name='pilihan' value='02'>
-                                                    </center>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="6">
-                                                <center>
-                                                    <input type="submit" class="genric-btn primary circle" value="KIRIM SUARA"></td>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                            </div>
+                                        <?php } ?>
+                                    </div>
+                                    <form class="pilih">
+                                        <div class="row">
+                                            <div class="col-md-4 offset-sm-1">
+                                                <input type='radio' class="primary-radio" name='pilihan' value='01'>
+                                            </div>
+                                            <div class="col-md-4 offset-sm-1">
+                                                <input type='radio' class="primary-radio" name='pilihan' value='02'>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <input type="submit" class="genric-btn primary circle" value="KIRIM SUARA"></td>
+                                    </form>   
                                 </center>
                                 <br>
                                 <br>

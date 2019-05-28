@@ -108,7 +108,7 @@
     </header>
 	<!-- Header part end-->
 
-	<section class="breadcrumb breadcrumb_bg">
+	<section class="breadcrumbpi breadcrumb_bg">
 		<div class="container">
 			<br>
 			<div class="row">

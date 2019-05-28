@@ -36,23 +36,26 @@ input:hover, input:focus {
 .breadcrumb{
   padding: 50px;
 }
-.card{
+.breadcrumb .card{
   height: 620px;
   margin-bottom: 15px;
   margin-top: 15px;
 }
-.card-body{
+.breadcrumb .card-body{
   height: 220px;
 }
-.card-body h1{
+.breadcrumb .card-body h1{
   text-align: center;
 }
-.card-body p{
+.breadcrumb .card-body p{
   size: 12px;
 }
 .calon{
   text-align: center;
   padding: 10px;
+}
+.pilih{
+  margin-top: 15px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

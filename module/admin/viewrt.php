@@ -115,7 +115,7 @@
 <!-- Header part end-->
 
 <!-- Content -->
-<section class="breadcrumbrt">
+<section class="breadcrumb">
     <div class="container">
         <div class="row">
             <!-- <div class="col-lg-12">

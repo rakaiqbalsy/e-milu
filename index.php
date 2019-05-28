@@ -60,7 +60,7 @@
 
 	<!-- Header part end-->
 
-	<section class="breadcrumb breadcrumb_bg"> 
+	<section class="breadcrumbid breadcrumb_bg"> 
 		<div class="container">
             <br>
             <br>

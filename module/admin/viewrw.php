@@ -122,6 +122,10 @@
                 <!-- <div class="breadcrumb_iner"> -->
                     <!-- <div class="breadcrumb_iner_item">  -->
                         <!-- <div class="col-lg-8 col-md-8"> -->
+                            <div class="col-md-12">
+                                <h1 class="calon">Calon Ketua RW</h1>
+                                <hr>
+                            </div>
                             <?php
                             $query = mysqli_query($koneksi,"SELECT * from calon_rw ORDER BY id_calonrw ASC");
                             while ($data = mysqli_fetch_assoc($query)) {
