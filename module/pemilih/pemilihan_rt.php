@@ -26,27 +26,16 @@
 </head>
 <body>
 
-<<<<<<< HEAD
     <?php 
+
+        include_once("../../config/koneksi.php");
+
         session_start();
         // cek apakah yang mengakses halaman ini sudah login
         if($_SESSION['level']==""){
             header("location:../../../index.php?pesan=gagal");
         }
     ?>
-=======
-        <?php 
-
-        	include_once("../../config/koneksi.php");
-
-            session_start();
-            // cek apakah yang mengakses halaman ini sudah login
-            if($_SESSION['level']==""){
-                header("location:../../../index.php?pesan=gagal");
-            }
-		?>
->>>>>>> 26ce95761e189f9c477de901e5da50ca8a93941f
-
 
     <!--::header part start::-->
     <header class="header_area">
@@ -129,11 +118,18 @@
 				<div class="col-lg-12 mb-5 mb-lg-0">
 					<div class="blog_left_sidebar">
 						<article class="blog_item">
-<<<<<<< HEAD
-					    	<div class="blog_details  bg-white">
+					    	<div class="blog_details bg-white">
                                 <center>
                                     <h1><b><font face="century gothic">SURAT SUARA PEMILIHAN UMUM</font></b></h1>
-                                    <h2><font face="century gothic">KETUA RT 00 RW 00 TAHUN 2019</font></h2>
+
+                                    <?php
+                                        $id_dpt = $_SESSION['id_dpt'];
+                                        $query = mysqli_query($koneksi, "SELECT * FROM dpt as A JOIN user as B ON A.id_dpt = B.id_dpt WHERE A.id_dpt = $id_dpt" );
+                                        $data = mysqli_fetch_assoc($query);
+                                    ?>
+
+                                    <h2><font face="century gothic">KETUA <?php echo $data['nama_dpt'];?> RW 01 TAHUN 2019</font></h2>
+    
                                     <br>
                                     <br>
                                     <table>
@@ -190,91 +186,6 @@
                                 <br>
                                 <br>
 						    </div>
-=======
-						<div class="blog_details  bg-white">
-                            <center>
-                            <font face="century gothic">
-                            <h1><b><font face="century gothic">SURAT SUARA PEMILIHAN UMUM</font><b></h1>
-                            
-                            <?php
-                            	$id_dpt = $_SESSION['id_dpt'];
-                            	$query = mysqli_query($koneksi, "SELECT * FROM dpt as A JOIN user as B ON A.id_dpt = B.id_dpt WHERE A.id_dpt = $id_dpt" );
-                            	$data = mysqli_fetch_assoc($query);
-                            ?>
-                            <h2><font face="century gothic">KETUA <?php echo $data['nama_dpt'];?> RW 01 TAHUN 2019</font></h2>
-                            <br>
-                            <br>
-
-<!-- Disini datanya-->
-
-<table>
-    <tr>
-        <td align="center"><div class="card"><h1><b><font face="century gothic" color="black">01</font></b></h1></div></td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td align="center"><div class="card"><h1><b><font face="century gothic" color="black">02</font></b></h1></div></td>
-        </tr>
-        <tr>
-        <td>
-
-               
-                     <div class="card">
-                     <a href="#">
-                        <img src="../../asset/img/team/team_1.png" alt="blog" width="300">
-        </a>
-                        <div class="card-body">
-                           <div class="tean_content">
-                            <center>
-                              <a href="#">
-                              <font face="century gothic" color="black">PROF. DR. ADITIA WARDANI, ST,. MT.</font>
-                              </a>
-        </center>
-                           </div>
-                        </div>
-                     </div>
-                    
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>
-      
-                     <div class="card">
-                     <a href="#">
-                        <img src="../../asset/img/team/team_2.png" alt="blog" width="300">
-                        <div class="card-body">
-        </a>
-                        <div class="tean_content">
-                        <center>
-                              <a href="#">
-                              <font face="century gothic" color="black">PROF. DR. Raka Iqbal SY, ST,. M.KOM.</font>
-                              </a>
-        </center>
-                           </div>
-                        </div>
-                     </div>
-                 
-        </td>
-        </tr>
-        </table>
-             
-        </center>
-
-
-
-
-
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-        
-						
-						  </div>
->>>>>>> 26ce95761e189f9c477de901e5da50ca8a93941f
 						</article>
 					</div>
                 </div>
