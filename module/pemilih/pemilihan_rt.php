@@ -26,13 +26,13 @@
 </head>
 <body>
 
-        <?php 
-            session_start();
-            // cek apakah yang mengakses halaman ini sudah login
-            if($_SESSION['level']==""){
-                header("location:../../../index.php?pesan=gagal");
-            }
-		?>
+    <?php 
+        session_start();
+        // cek apakah yang mengakses halaman ini sudah login
+        if($_SESSION['level']==""){
+            header("location:../../../index.php?pesan=gagal");
+        }
+    ?>
 
 
     <!--::header part start::-->
@@ -108,91 +108,74 @@
     </header>
 	<!-- Header part end-->
 
-	<!-- Header part end-->
 
 	<section class="breadcrumb breadcrumb_bg">
 		<div class="container">
+            <br>
 			<div class="row">
 				<div class="col-lg-12 mb-5 mb-lg-0">
 					<div class="blog_left_sidebar">
 						<article class="blog_item">
-						<div class="blog_details  bg-white">
-                            <center>
-                            <font face="century gothic">
-                            <h1><b><font face="century gothic">SURAT SUARA PEMILIHAN UMUM</font><b></h1>
-                            <h2><font face="century gothic">KETUA RT 00 RW 00 TAHUN 2019</font></h2>
-                            <br>
-                            <br>
-
-<!-- Disini datanya-->
-
-<table>
-    <tr>
-        <td align="center"><div class="card"><h1><b><font face="century gothic" color="black">01</font></b></h1></div></td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td align="center"><div class="card"><h1><b><font face="century gothic" color="black">02</font></b></h1></div></td>
-        </tr>
-        <tr>
-        <td>
-
-               
-                     <div class="card">
-                     <a href="#">
-                        <img src="../../asset/img/team/team_1.png" alt="blog" width="300">
-        </a>
-                        <div class="card-body">
-                           <div class="tean_content">
-                            <center>
-                              <a href="#">
-                              <font face="century gothic" color="black">PROF. DR. ADITIA WARDANI, ST,. MT.</font>
-                              </a>
-        </center>
-                           </div>
-                        </div>
-                     </div>
-                    
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>
-      
-                     <div class="card">
-                     <a href="#">
-                        <img src="../../asset/img/team/team_2.png" alt="blog" width="300">
-                        <div class="card-body">
-        </a>
-                        <div class="tean_content">
-                        <center>
-                              <a href="#">
-                              <font face="century gothic" color="black">PROF. DR. Raka Iqbal SY, ST,. M.KOM.</font>
-                              </a>
-        </center>
-                           </div>
-                        </div>
-                     </div>
-                 
-        </td>
-        </tr>
-        </table>
-             
-        </center>
-
-
-
-
-
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-        
-						
-						  </div>
+					    	<div class="blog_details  bg-white">
+                                <center>
+                                    <h1><b><font face="century gothic">SURAT SUARA PEMILIHAN UMUM</font></b></h1>
+                                    <h2><font face="century gothic">KETUA RT 00 RW 00 TAHUN 2019</font></h2>
+                                    <br>
+                                    <br>
+                                    <table>
+                                        <tr>
+                                            <td align="center"><div class="card"><h1><b><font face="century gothic" color="black">01</font></b></h1></div></td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td align="center"><div class="card"><h1><b><font face="century gothic" color="black">02</font></b></h1></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="card">
+                                                    <a href="#">
+                                                        <img src="../../asset/img/calon_1.jpg" alt="blog" width="300">
+                                                    </a>
+                                                    <div class="card-body">
+                                                        <div class="tean_content">
+                                                            <center>
+                                                                <a href="#">
+                                                                     <h5><b><font face="century gothic" color="black">Ir. H. JOKO WIDODO</font></b></h5>
+                                                                </a>
+                                                             </center>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>
+                                                <div class="card">
+                                                    <a href="#">
+                                                        <img src="../../asset/img/calon_2.jpg" alt="blog" width="300">
+                                                    </a>
+                                                    <div class="card-body">
+                                                        <div class="tean_content">  
+                                                            <center>
+                                                                <a href="#">        
+                                                                    <h5><b><font face="century gothic" color="black">H. PRABOWO SUBIANTO</font></b></h5>
+                                                                </a>
+                                                            </center>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+						    </div>
 						</article>
 					</div>
                 </div>

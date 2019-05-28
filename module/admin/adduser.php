@@ -28,13 +28,13 @@
 
 <body>
 
-    <?php 
-        session_start();
-        // cek apakah yang mengakses halaman ini sudah login
-        if($_SESSION['level']==""){
-            header("location:../../../index.php?pesan=gagal");
-        }
-    ?>
+  <?php 
+      session_start();
+      // cek apakah yang mengakses halaman ini sudah login
+      if($_SESSION['level']==""){
+          header("location:../../../index.php?pesan=gagal");
+      }
+  ?>
 
 
 <!--::header part start::-->
@@ -110,99 +110,98 @@
     </div>
 </header>
 <!-- Header part end-->
-
-    <!-- Start banner Area -->
     
 
-    <?php 
-	//session_start();
+  <?php 
+    //session_start();
 
-	include_once("../../config/koneksi.php");
+    include_once("../../config/koneksi.php");
 
-	// cek apakah yang mengakses halaman ini sudah login
-	if($_SESSION['level']==""){
-		header("location:../index.php?pesan=gagal");
-	}
+    // cek apakah yang mengakses halaman ini sudah login
+    if($_SESSION['level']==""){
+      header("location:../index.php?pesan=gagal");
+    }
 
 	?>
 
 	<?php  
-      // fungsi untuk menampilkan pesan
-      // jika alert = "" (kosong)
-      // tampilkan pesan "" (kosong)
-      if (empty($_GET['alert'])) {
-        echo "";
-      } 
-      // jika alert = 1
-      // tampilkan pesan Gagal "Username atau Password salah, cek kembali Username dan Password Anda"
-      elseif ($_GET['alert'] == 1) {
-        echo "<div class='alert alert-danger alert-dismissable'>
-                <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                <h4>  <i class='icon fa fa-times-circle'></i> Gagal Login!</h4>
-                Username atau Password salah, cek kembali Username dan Password Anda.
-              </div>";
-      }
-      // jika alert = 2
-      // tampilkan pesan Sukses "Anda telah berhasil logout"
-      elseif ($_GET['alert'] == 2) {
-        echo "<div class='alert alert-success alert-dismissable'>
-                <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                <h4>  <i class='icon fa fa-check-circle'></i> Sukses!</h4>
-                Anda telah berhasil logout.
-              </div>";
-      }
+    // fungsi untuk menampilkan pesan
+    // jika alert = "" (kosong)
+    // tampilkan pesan "" (kosong)
+    if (empty($_GET['alert'])) {
+      echo "";
+    } 
+    // jika alert = 1
+    // tampilkan pesan Gagal "Username atau Password salah, cek kembali Username dan Password Anda"
+    elseif ($_GET['alert'] == 1) {
+      echo "<div class='alert alert-danger alert-dismissable'>
+              <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+              <h4>  <i class='icon fa fa-times-circle'></i> Gagal Login!</h4>
+              Username atau Password salah, cek kembali Username dan Password Anda.
+            </div>";
+    }
+    // jika alert = 2
+    // tampilkan pesan Sukses "Anda telah berhasil logout"
+    elseif ($_GET['alert'] == 2) {
+      echo "<div class='alert alert-success alert-dismissable'>
+              <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+              <h4>  <i class='icon fa fa-check-circle'></i> Sukses!</h4>
+              Anda telah berhasil logout.
+            </div>";
+    }
 
-      elseif ($_GET['alert'] == 3) {
-        echo "<div class='alert alert-success alert-dismissable'>
-                <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                <h4>  <i class='icon fa fa-check-circle'></i> Sukses!</h4>
-                Data berhasil disimpan
-              </div>";
-      }
+    elseif ($_GET['alert'] == 3) {
+      echo "<div class='alert alert-success alert-dismissable'>
+              <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+              <h4>  <i class='icon fa fa-check-circle'></i> Sukses!</h4>
+              Data berhasil disimpan
+            </div>";
+    }
   ?>
 
 
 	<!--::breadcrumb part start::-->
     <section class="breadcrumb breadcrumb_bg">
-		<div class="container">
-			<div class="row">
-            <div class="col-lg-8 mb-5 mb-lg-0">
-              <div class="blog_left_sidebar">
-						<article class="blog_item">
-        				  <div class="blog_details  bg-white">	<h2>Tambah DPT</b></h2>
-					<br>
-                <br>
-                <form action="processadd.php?act=insert" method="post" name="form1">
-									<div class="mt-10">
-										<input type="text" name="nama" placeholder="Nama Lengkap" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'"
-										 required class="single-input">
-									</div>
-									<div class="mt-10">
-										<input type="text" name="username" placeholder="Nama Pengguna" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Pengguna'"
-										 required class="single-input">
-									</div>
-									<div class="mt-10">
-										<input type="password" name="password" placeholder="Kata Sandi" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Kata Sandi'"
-										 required class="single-input">
-									</div>
-									<div class="mt-10">
-										<input type="number" name="NIK" placeholder="Nomor Induk Kependudukan" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nomor Induk Kependudukan'"
-										 required class="single-input">
-									</div>
-									<div class="input-group-icon mt-10">
-									<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
-										<div class="form-select" id="default-select"">
-                        <select class="chosen-select" id="id_dpt" name="id_dpt" data-placeholder="-- Pilih DPT --"  autocomplete="off" required style="width: 150px;">
-                          <option value="<?php echo $data['id_dpt'] ?>"></option>
-                          <?php
-                              $query = mysqli_query($koneksi, "SELECT * FROM dpt ORDER BY id_dpt ASC")
-                              or die('Ada kesalahan pada query tampil jadwal: '.mysqli_error($mysqli));
-                              while ($data = mysqli_fetch_assoc($query)) {
-                              echo"<option value=\"$data[id_dpt]\"> $data[id_dpt]</option>";
-                              }
-                          ?>
-                        </select>
+		  <div class="container">
+        <br>
+			  <div class="row">
+          <div class="col-lg-8 mb-5 mb-lg-0">
+            <div class="blog_left_sidebar">
+					  	<article class="blog_item">
+        	      <div class="blog_details  bg-white">	<h2>Tambah DPT</b></h2>
+					        <br>
+                  <br>
+                  <form action="processadd.php?act=insert" method="post" name="form1">
+									  <div class="mt-10">
+										  <input type="text" name="nama" placeholder="Nama Lengkap" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'"
+										   required class="single-input">
+								    	</div>
+                    <div class="mt-10">
+                      <input type="text" name="username" placeholder="Nama Pengguna" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Pengguna'"
+                      required class="single-input">
                     </div>
+                    <div class="mt-10">
+                      <input type="password" name="password" placeholder="Kata Sandi" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Kata Sandi'"
+                      required class="single-input">
+                    </div>
+                    <div class="mt-10">
+                      <input type="number" name="nik" placeholder="Nomor Induk Kependudukan" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nomor Induk Kependudukan'"
+                      required class="single-input">
+                    </div>
+									  <div class="input-group-icon mt-10">
+                     <div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+                      <div class="form-select" id="default-select"">
+                          <select class="chosen-select" id="id_dpt" name="id_dpt" data-placeholder="-- Pilih DPT --"  autocomplete="off" required style="width: 150px;">
+                            <option value="<?php echo $data['id_dpt'] ?>"></option>
+                            <?php
+                                $query = mysqli_query($koneksi, "SELECT * FROM dpt ORDER BY id_dpt ASC")
+                                or die('Ada kesalahan pada query tampil jadwal: '.mysqli_error($mysqli));
+                                while ($data = mysqli_fetch_assoc($query)) {
+                                echo"<option value=\"$data[id_dpt]\"> $data[id_dpt]</option>";
+                                }
+                            ?>
+                          </select>
+                      </div>
                   </div>
                   <div class="mt-10">
 										<textarea class="single-textarea" name="alamat" placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
@@ -210,7 +209,7 @@
 									</div>
                   <div class="input-group-icon mt-10">
 										<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-                       <input type="submit" class="genric-btn primary circle" name="add" value="Tambah">
+                       <input type="submit" class="genric-btn primary radius" name="add" value="SIMPAN">
                   </div>
                 </form>
                 <br>
@@ -221,35 +220,35 @@
                 <br>
                 <br>
                 <br>
-                <a href="../../logout.php" class="genric-btn warning">LOGOUT</a>
+                <a href="../../logout.php" class="genric-btn warning radius">LOGOUT</a>
               </div>
-              </article>
+            </article>
 					</div>
-                </div>
+        </div>
 				<div class="col-lg-4">
 					<div class="blog_right_sidebar">
 						<aside class="single_sidebar_widget post_category_widget">
-							<h4 class="widget_title">Administrator</h4>
-						    <ul class="list cat-list">
-							    <li>
-									<a href="#" class="d-flex">
-									  <p>Resaurant food</p>
-									  <p>(37)</p>
-						    		</a>
-								</li>
-								<li>
-								    <a href="#" class="d-flex">
-									  <p>Travel news</p>
-									  <p>(10)</p>
-								    </a>
-								</li>
-								<li>
-									<a href="#" class="d-flex">
-									   <p>Modern technology</p>
-									   <p>(03)</p>
-								    </a>
-                                </li>  
-							</ul>
+            <h4 class="widget_title">Administrator</h4>
+              <ul class="list cat-list">
+                <li>
+                  <a href="#" class="d-flex">
+                    <p>Resaurant food</p>
+                    <p>(37)</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex">
+                  <p>Travel news</p>
+                  <p>(10)</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex">
+                    <p>Modern technology</p>
+                    <p>(03)</p>
+                    </a>
+                </li>  
+              </ul>
 						</aside>
 					</div>
 				</div>
@@ -257,7 +256,6 @@
 		</div>
 	</section>
 	<!--::breadcrumb part start::-->
-	<!-- End banner Area -->
 
 	<!-- footer part start-->
     <footer class="copyright_part">
@@ -299,8 +297,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="../../asset/js/swiper.min.js"></script>
     <!-- custom js -->
     <script src="../../asset/js/custom.js"></script>
-
-
+    
 </body>
-
 </html>

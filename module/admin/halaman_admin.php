@@ -26,13 +26,13 @@
 </head>
 <body>
 
-        <?php 
-            session_start();
-            // cek apakah yang mengakses halaman ini sudah login
-            if($_SESSION['level']==""){
-                header("location:../../../index.php?pesan=gagal");
-            }
-		?>
+    <?php 
+        session_start();
+        // cek apakah yang mengakses halaman ini sudah login
+        if($_SESSION['level']==""){
+            header("location:../../../index.php?pesan=gagal");
+        }
+    ?>
 
 
     <!--::header part start::-->
@@ -109,31 +109,27 @@
     </header>
 	<!-- Header part end-->
 
-	<!-- Header part end-->
-
 	<section class="breadcrumb breadcrumb_bg">
 		<div class="container">
+            <br>
 			<div class="row">
 				<div class="col-lg-8 mb-5 mb-lg-0">
 					<div class="blog_left_sidebar">
 						<article class="blog_item">
-        				<div class="blog_details  bg-white">
-													
-								<h2>Selamat datang <b><?php echo $_SESSION['username']; ?></b></h2>
-					          <p>E-Pemilu merupakan aplikasi <i>elektronic voting</i></p>
-                           <p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
-				><br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-														<a href="../../logout.php" class="genric-btn warning">LOGOUT</a>
-              
-					</div>
-
+        				    <div class="blog_details bg-white">						
+							    <h2>Selamat datang <b><?php echo $_SESSION['username']; ?></b></h2>
+					            <p>E-Pemilu merupakan aplikasi <i>elektronic voting</i></p>
+                                <p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b></p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <a href="../../logout.php" class="genric-btn warning radius">KELUAR</a>
+                            </div>
 						</article>
 					</div>
                 </div>
@@ -170,8 +166,6 @@
     
 <!-- footer part start-->
 
-<!-- footer part start-->
-
 <footer class="copyright_part">
     <div class="container">
         <div class="row align-items-center">
@@ -201,7 +195,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- easing js -->
 <script src="../../../asset/js/jquery.magnific-popup.js"></script>
 <!-- swiper js -->
-<script src="../../../asset/../../asset/js/swiper.min.js"></script>
+<script src="../../../asset/js/swiper.min.js"></script>
 <!-- swiper js -->
 <script src="../../../asset/js/masonry.pkgd.js"></script>
 <!-- particles js -->

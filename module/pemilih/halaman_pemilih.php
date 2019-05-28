@@ -26,13 +26,13 @@
 </head>
 <body>
 
-        <?php 
-            session_start();
-            // cek apakah yang mengakses halaman ini sudah login
-            if($_SESSION['level']==""){
-                header("location:../../../index.php?pesan=gagal");
-            }
-		?>
+	<?php 
+		session_start();
+		// cek apakah yang mengakses halaman ini sudah login
+		if($_SESSION['level']==""){
+			header("location:../../../index.php?pesan=gagal");
+		}
+	?>
 
 
     <!--::header part start::-->
@@ -108,54 +108,73 @@
     </header>
 	<!-- Header part end-->
 
-	<!-- Header part end-->
-
 	<section class="breadcrumb breadcrumb_bg">
 		<div class="container">
+			<br>
 			<div class="row">
 				<div class="col-lg-8 mb-5 mb-lg-0">
 					<div class="blog_left_sidebar">
 						<article class="blog_item">
-						<div class="blog_details  bg-white">
-                            <h2>Selamat datang <b><?php echo $_SESSION['nik']; ?></b></h2>
-                            <p>E-Pemilu merupakan aplikasi <i>elektronic voting</i></p>
-                            <p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-							<a href="../../logout.php" class="genric-btn danger">LOGOUT</a>
-              
-						  </div>
+							<div class="blog_details  bg-white">
+                            	<h2><font  color="black" face="century gothic"><i>Selamat datang</i> <b><?php echo $_SESSION['nik']; ?></font></b></h2>
+                            	<p>E-Pemilu merupakan aplikasi <i>elektronic voting</i></p>
+                           		<p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<a href="../../logout.php" class="genric-btn primary radius">KELUAR</a>
+						  	</div>
 						</article>
 					</div>
                 </div>
 				<div class="col-lg-4">
 					<div class="blog_right_sidebar">
 						<aside class="single_sidebar_widget post_category_widget">
-							<h4 class="widget_title">Surat Suara</h4>
-						    <center>
+							<center>	
+								<h4 class="widget_title"><font  color="black" face="century gothic">SURAT SUARA PEMILIHAN</font></h4>
 								<table>
 									<tr>
-									<td><div class="card">
-									<a href="pemilihan_rw.php" class="genric-btn warning radius"><h1>Pemilihan RW</h1></a>
-		</div></td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td><div class="card">
-								    <a href="pemilihan_rt.php" class="genric-btn primary radius"><h1>Pemilihan RT</h1></a>
-									</div></td>
-		</tr>
-		</table>
-		</center>
-                           
+										<td>
+											<div class="card">
+												<a href="pemilihan_rw.php" class="genric-btn danger radius"><h2><font  color="white" face="century gothic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R W &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></h2></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="card">
+								    			<a href="pemilihan_rt.php" class="genric-btn success sradius"><h2><font color="white" face="century gothic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R T &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></h2></a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</center>
+							<br>		
+							<table>
+								<tr>
+									<td colspan="2"><i><font size="1">Perhatian :</font></i></td>
+								</tr>
+								<tr>
+									<td><i><font size="1">1. </font></i></td>
+									<td><i><font size="1">Pemilihan harus dilakukan dengan jujur dan adil.</font></i></td>
+								</tr>
+								<tr>
+									<td><i><font size="1">2. </td>
+									<td><i><font size="1">Pemilihan hanya bisa dilakukan satu kali.</font></i></td>
+								</tr>
+								<tr>
+									<td><i><font size="1">3. </td>
+									<td><i><font size="1">Segala kecurangan akan ditindak sesuai undang-undang.</font></i></td>
+								</tr>
+							</table>
 						</aside>
 					</div>
 				</div>
@@ -163,8 +182,6 @@
 		</div>
 	</section>
     
-<!-- footer part start-->
-
 <!-- footer part start-->
 
 <footer class="copyright_part">
@@ -196,7 +213,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- easing js -->
 <script src="../../../asset/js/jquery.magnific-popup.js"></script>
 <!-- swiper js -->
-<script src="../../../asset/../../asset/js/swiper.min.js"></script>
+<script src="../../../asset/js/swiper.min.js"></script>
 <!-- swiper js -->
 <script src="../../../asset/js/masonry.pkgd.js"></script>
 <!-- particles js -->

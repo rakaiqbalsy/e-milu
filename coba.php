@@ -75,12 +75,13 @@
 					<div class="blog_right_sidebar">
 						<aside class="single_sidebar_widget post_category_widget">
 							<h4 class="widget_title">L O G I N</h4>
-                            <form class="login-form" action="cek_login.php" method="post">
-				
+                            <form action="processadd.php?act=insert" method="post" name="form1">
+									
+									
 								<table>
 									<tr>
 									<td><div class="card">
-										<input type="text" name="username" placeholder="Nama Pengguna"
+										<input type="text" name="nama" placeholder="Nama Lengkap" onblur="this.placeholder = 'Nama Lengkap'"
 										 required class="single-input">
 									</div></td>
 		</tr>
@@ -89,7 +90,7 @@
 		</tr>
 		<tr>
 			<td><div class="card">
-										<input type="password" name="password" placeholder="Kata Sandi"
+										<input type="password" name="password" placeholder="Kata Sandi" onblur="this.placeholder = 'Kata Sandi'"
 										 required class="single-input">
 									</div></td>
         </tr>
@@ -99,7 +100,7 @@
 </tr>
 <tr>
 <td align="center">
-        <input type="submit" class="genric-btn primary radius" value="MASUK"></td>
+        <input type="submit" class="genric-btn primary radius" value="Login"></td>
 </tr>
         </table>
 </form>
