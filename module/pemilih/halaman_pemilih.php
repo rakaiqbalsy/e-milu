@@ -139,10 +139,21 @@
 						<aside class="single_sidebar_widget post_category_widget">
 							<h4 class="widget_title">Surat Suara</h4>
 						    <center>
-									<a href="pemilihan_rw.php" class="genric-btn warning radius"><h1>Pemilihan RW<h1></a>
-								
-								    <a href="pemilihan_rt.php" class="genric-btn success radius"><h1>Pemilihan RT<h1></a>
-								
+								<table>
+									<tr>
+									<td><div class="card">
+									<a href="pemilihan_rw.php" class="genric-btn warning radius"><h1>Pemilihan RW</h1></a>
+		</div></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><div class="card">
+								    <a href="pemilihan_rt.php" class="genric-btn primary radius"><h1>Pemilihan RT</h1></a>
+									</div></td>
+		</tr>
+		</table>
 		</center>
                            
 						</aside>
