@@ -1,5 +1,5 @@
 <?php 
-$koneksi = mysqli_connect("localhost","root","","kpu");
+$koneksi = mysqli_connect("localhost","root","","e-pemilu");
  
 // Check connection
 if (mysqli_connect_errno()){

@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Admin</title>
+    <title>E-Voting | Petugas</title>
     <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../asset/css/bootstrap.min.css">
@@ -24,15 +24,13 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="../../asset/css/style.css">
 </head>
-
 <body>
 
         <?php 
             session_start();
-        
             // cek apakah yang mengakses halaman ini sudah login
             if($_SESSION['level']==""){
-                header("location:../../index.php?pesan=gagal");
+                header("location:../../../index.php?pesan=gagal");
             }
 		?>
 
@@ -50,7 +48,7 @@
                   <div class="col-md-8 col-xl-6">
                       <div class="sub_header_social_icon float-right">
                         <a href="#"><i class="flaticon-phone"></i>+62 857 2160 3080</a>
-                        <a href="dpt/adduser.php" class="register_icon"><i class="ti-arrow-right"></i>TAMBAH DPT</a>
+                        <a href="adduser.php" class="register_icon"><i class="ti-arrow-right"></i>TAMBAH DPT</a>
                       </div>
                     </div>
                 </div>
@@ -67,7 +65,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item active">
-                                        <a class="nav-link active" href="index.html">Home</a>
+                                        <a class="nav-link active" href="halaman_admin.php">Beranda</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -111,16 +109,22 @@
     </header>
 	<!-- Header part end-->
 
+	<!-- Header part end-->
+
 	<section class="breadcrumb breadcrumb_bg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 mb-5 mb-lg-0">
 					<div class="blog_left_sidebar">
 						<article class="blog_item">
-        				  <div class="blog_details">
-                            <h2>Selamat datang <b><?php echo $_SESSION['username']; ?></b></h2>
-                            <p>E-Pemilu merupakan aplikasi <i>elektronic voting</i></p>
-                            <p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
+        				<div class="blog_details  bg-white">
+								<ul class="list cat-list">
+							    <li>					
+								<h2>Selamat datang <b><?php echo $_SESSION['username']; ?></b></h2>
+					</li>           <p>E-Pemilu merupakan aplikasi <i>elektronic voting</i></p>
+                           <li> <p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
+					</li>
+					<li><br>
                             <br>
                             <br>
                             <br>
@@ -128,9 +132,10 @@
                             <br>
                             <br>
                             <br>
-                            <br>
-							<a href="../../logout.php">LOGOUT</a>
-						  </div>
+														<a href="../../logout.php" class="genric-btn warning">LOGOUT</a>
+              
+					</li>
+					</ul></div>
 						</article>
 					</div>
                 </div>
@@ -164,6 +169,9 @@
 			</div>
 		</div>
 	</section>
+    
+<!-- footer part start-->
+
 <!-- footer part start-->
 
 <footer class="copyright_part">
@@ -185,25 +193,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 <!-- jquery plugins here-->
 <!-- jquery -->
-<script src="../../asset/js/jquery-1.12.1.min.js"></script>
+<script src="../../../asset/js/jquery-1.12.1.min.js"></script>
 <!-- popper js -->
-<script src="../../asset/js/popper.min.js"></script>
+<script src="../../../asset/js/popper.min.js"></script>
 <!-- bootstrap js -->
-<script src="../../asset/js/bootstrap.min.js"></script>
+<script src="../../../asset/js/bootstrap.min.js"></script>
 <!-- aos js -->
-<script src="../../asset/js/aos.js"></script>
+<script src="../../../asset/js/aos.js"></script>
 <!-- easing js -->
-<script src="../../asset/js/jquery.magnific-popup.js"></script>
+<script src="../../../asset/js/jquery.magnific-popup.js"></script>
 <!-- swiper js -->
-<script src="../../asset/../../asset/js/swiper.min.js"></script>
+<script src="../../../asset/../../asset/js/swiper.min.js"></script>
 <!-- swiper js -->
-<script src="../../asset/js/masonry.pkgd.js"></script>
+<script src="../../../asset/js/masonry.pkgd.js"></script>
 <!-- particles js -->
-<script src="../../asset/js/owl.carousel.min.js"></script>
+<script src="../../../asset/js/owl.carousel.min.js"></script>
 <!-- carousel js -->
-<script src="../../asset/js/swiper.min.js"></script>
+<script src="../../../asset/js/swiper.min.js"></script>
 <!-- custom js -->
-<script src="../../asset/js/custom.js"></script>
+<script src="../../../asset/js/custom.js"></script>
 
 </body>
 </html>
