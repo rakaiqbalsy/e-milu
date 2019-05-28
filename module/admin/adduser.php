@@ -74,8 +74,8 @@
                                         Calon
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="elements.html">RW</a>
-                                        <a class="dropdown-item" href="single-blog.html">RT</a>
+                                        <a class="dropdown-item" href="viewrw.php">RW</a>
+                                        <a class="dropdown-item" href="viewrt.php">RT</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
