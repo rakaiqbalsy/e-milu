@@ -70,7 +70,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link active" href="halaman_admin.php">Beranda</a>
+                                    <a class="nav-link active" href="halaman_pemilih.php">Beranda</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -80,6 +80,9 @@
                                         <a class="dropdown-item" href="viewrw.php">RW</a>
                                         <a class="dropdown-item" href="viewrt.php">RT</a>
                                     </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="bantuan.php" class="nav-link">Bantuan</a>
                                 </li>
                             </ul>
                             <div class="header_social_icon d-none d-lg-block">

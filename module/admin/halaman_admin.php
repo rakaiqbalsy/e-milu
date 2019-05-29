@@ -143,13 +143,13 @@
 						    		</a>
 								</li>
 								<li>
-								    <a href="#" class="d-flex">
-									  <p>Data Masuk (30)</p>
+								    <a href="chartrw.php" class="d-flex">
+									  <p>Data Masuk RW</p>
 								    </a>
 								</li>
 								<li>
-									<a href="#" class="d-flex">
-									   <p>Daftar Pemilih Cadangan (5)</p>
+									<a href="chartrt.php" class="d-flex">
+									   <p>Data Masuk RT</p>
 								    </a>
                                 </li>  
 							</ul>

@@ -172,25 +172,37 @@
 					        <br>
                   <br>
                   <form action="processadd.php?act=insert" method="post" name="form1">
-									  <div class="mt-10">
+									  
+                    <div class="mt-10">
+                      <span> MASUKAN ID FINGER *samakan dengan enroll user</span>
+                      <input type="text" name="id_finger" placeholder="ID FINGER" onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID FINGER'"
+                       required class="single-input">
+                       <span style="color: red">*samakan dengan enroll user</span>
+                    </div>
+                    <div class="mt-10">
+                      <span>NAMA LENGKAP</span>
 										  <input type="text" name="nama" placeholder="Nama Lengkap" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'"
 										   required class="single-input">
 								    	</div>
                     <div class="mt-10">
+                      <span>USERNAME</span>
                       <input type="text" name="username" placeholder="Nama Pengguna" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Pengguna'"
                       required class="single-input">
                     </div>
                     <div class="mt-10">
+                      <span>Kata Sandi</span>
                       <input type="password" name="password" placeholder="Kata Sandi" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Kata Sandi'"
                       required class="single-input">
                     </div>
                     <div class="mt-10">
+                      <span>NIK</span>
                       <input type="number" name="nik" placeholder="Nomor Induk Kependudukan" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nomor Induk Kependudukan'"
                       required class="single-input">
                     </div>
 									  <div class="input-group-icon mt-10">
+                      <span>PILIH DPT</span>
                      <div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
-                      <div class="form-select" id="default-select"">
+                      <div class="form-select" id="default-select">
                           <select class="chosen-select" id="id_dpt" name="id_dpt" data-placeholder="-- Pilih DPT --"  autocomplete="off" required style="width: 150px;">
                             <option value="<?php echo $data['id_dpt'] ?>"></option>
                             <?php
@@ -204,6 +216,7 @@
                       </div>
                   </div>
                   <div class="mt-10">
+                    <span>ALAMAT</span>
 										<textarea class="single-textarea" name="alamat" placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
 										 required></textarea>
 									</div>

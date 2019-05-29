@@ -40,8 +40,9 @@ if($cek > 0){
 		$_SESSION['level'] = "pemilih";
 		$_SESSION['id_user'] = $data['id_user'];
 		$_SESSION['id_dpt'] = $data['id_dpt'];
+		$_SESSION['id_finger'] = $data['id_finger'];
 		// alihkan ke halaman dashboard user
-		header("location:module/pemilih/halaman_pemilih.php");
+		header("location:module/pemilih/index1.php");
 
 	}else{
 

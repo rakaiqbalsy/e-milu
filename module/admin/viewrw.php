@@ -81,9 +81,7 @@
                                         <a class="dropdown-item" href="viewrt.php">RT</a>
                                     </div>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="blog.html" class="nav-link">Bantuan</a>
-                                </li>
+                               
                             </ul>
                             <div class="header_social_icon d-none d-lg-block">
                                 <ul>
@@ -123,7 +121,7 @@
                     <!-- <div class="breadcrumb_iner_item">  -->
                         <!-- <div class="col-lg-8 col-md-8"> -->
                             <div class="col-md-12">
-                                <h1 class="calon">CALON KETUA RW 1</h1>
+                                <h1 class="calon">CALON KETUA RW 01</h1>
                                 <hr>
                             </div>
                             <?php

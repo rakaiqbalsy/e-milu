@@ -71,8 +71,8 @@
                                             Calon
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="../admin/viewrw.php">RW</a>
-                                            <a class="dropdown-item" href="../admin/viewrt.php">RT</a>
+                                            <a class="dropdown-item" href="viewrw.php">RW</a>
+                                            <a class="dropdown-item" href="viewrt.php">RT</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
@@ -120,7 +120,7 @@
                             	<p align="justify">E-Voting atau <i>Electronic Voting</i> merupakan aplikasi karya anak bangsa yang dimanfaatkan untuk Pemilihan Umum Serentak RT/RW Tahun 2019, aplikasi ini merupakan bentuk kemajuan demokrasi bangsa indonesia dengan aplikasi ini proses demokrasi dapat di digitalisasi.</p>
                            		<p><b>DATA DIRI ANDA</b>
                                 <br>Nomor Induk Kependudukan : <b><?php echo $_SESSION['nik']; ?></b>
-                                <br>Rukun Tetangga : <b>0<?php echo $_SESSION['id_dpt']; ?></b>
+                                <br>Rukun Tetangga : <b><?php echo $_SESSION['id_dpt']; ?></b>
                                 <br>Rukun Warga : <b>01</b>
                                 <br>Status : <b><?php echo $_SESSION['level']; ?></b></p>
 								<br>

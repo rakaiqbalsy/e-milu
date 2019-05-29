@@ -65,15 +65,15 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item active">
-                                        <a class="nav-link active" href="index.html">Home</a>
+                                        <a class="nav-link active" href="halaman_admin.php">Home</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Calon
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="elements.html">RW</a>
-                                            <a class="dropdown-item" href="single-blog.html">RT</a>
+                                            <a class="dropdown-item" href="viewrw.php">RW</a>
+                                            <a class="dropdown-item" href="viewrt.php">RT</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
@@ -114,7 +114,7 @@
 
     ?>
             <center>
-                <h1> PEROLEHAN HASIL RW</h1>
+                <h1> PEROLEHAN HASIL RW 08</h1>
             </center>
             <div style="width: 800px;margin: 0px auto;">
                 <canvas id="myChart"></canvas>
