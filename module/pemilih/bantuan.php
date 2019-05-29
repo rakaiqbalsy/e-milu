@@ -71,8 +71,8 @@
                                             Calon
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="elements.html">RW</a>
-                                            <a class="dropdown-item" href="single-blog.html">RT</a>
+                                            <a class="dropdown-item" href="../admin/viewrw.php">RW</a>
+                                            <a class="dropdown-item" href="../admin/viewrt.php">RT</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
@@ -115,7 +115,7 @@
 				<div class="col-lg-8 mb-5 mb-lg-0">
 					<div class="blog_left_sidebar">
 						<article class="blog_item">
-							<div class="blog_details  bg-white">
+							<div class="blog_details bg-white">
                             	<h2><font  color="black" face="century gothic"><i>Salam hangat,</i> <b><?php echo $_SESSION['nik']; ?></font></b></h2>
                             	<p align="justify">Jika anda mengalami kendala saat menggunakan <i>Electronic Voting</i> ini anda dapat menghubungi petugas KPPS atau yang berwenang ditempat atau domisili anda, dengan senang hati kami siap melayani. <br><b>#AyoMemilih</b></p>
                            		
@@ -140,32 +140,11 @@
 				<div class="col-lg-4">
 					<div class="blog_right_sidebar">
 						<aside class="single_sidebar_widget post_category_widget">
-							<center>	
-								<h4 class="widget_title"><font  color="black" face="century gothic">SURAT SUARA PEMILIHAN</font></h4>
-								<table>
-									<tr>
-										<td>
-											<div class="card">
-												<a href="verifikasi_rw.php" class="genric-btn danger radius"><h2><font  color="white" face="century gothic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R W &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></h2></a>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="card">
-								    			<a  href="verifikasi_rt.php" class="genric-btn success sradius"><h2><font color="white" face="century gothic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R T &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></h2></a>
-											</div>
-										</td>
-									</tr>
-								</table>
-							</center>
-							<br>		
+                            <center>	
+								<h4 class="widget_title"><font  color="black" face="century gothic">PERHATIAN</font></h4>
 							<table>
 								<tr>
-									<td colspan="2"><i><font size="1">Perhatian :</font></i></td>
+									<td colspan="2"><i><font size="1">Catatan :</font></i></td>
 								</tr>
 								<tr>
 									<td><i><font size="1">1. </font></i></td>
@@ -180,6 +159,7 @@
 									<td><i><font size="1">Segala kecurangan akan ditindak sesuai undang-undang.</font></i></td>
 								</tr>
 							</table>
+                            </center>
 						</aside>
 					</div>
 				</div>

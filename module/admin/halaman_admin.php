@@ -77,7 +77,7 @@
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="blog.html" class="nav-link">Bantuan</a>
+                                        <a href="adduser.php" class="nav-link">DPT</a>
                                     </li>
                                 </ul>
                                 <div class="header_social_icon d-none d-lg-block">
@@ -118,17 +118,14 @@
 						<article class="blog_item">
         				    <div class="blog_details bg-white">	
                                 <h2><font  color="black" face="century gothic"><i>Selamat datang</i> <b><?php echo $_SESSION['username']; ?></font></b></h2>
-                            	<p>E-Voting atau <i>Electronic Voting</i> merupakan aplikasi karya anak bangsa yang dimanfaatkan untuk Pemilihan Umum Serentak Tahun 2019</p>
-                           		<p>Halo Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <a href="../../logout.php" class="genric-btn warning radius">KELUAR</a>
+                            	<p align="justify">E-Voting atau <i>Electronic Voting</i> merupakan aplikasi karya anak bangsa yang dimanfaatkan untuk Pemilihan Umum Serentak RT/RW Tahun 2019, aplikasi ini merupakan bentuk kemajuan demokrasi bangsa indonesia dengan aplikasi ini proses demokrasi dapat di digitalisasi.</p>
+                           		<p><b>DATA DIRI ANDA</b>
+                                <br>KPPS : <b><?php echo $_SESSION['username']; ?></b>
+                                <br>Rukun Warga : <b>01</b>
+                                <br>Status : <b><?php echo $_SESSION['level']; ?></b></p>
+								<br>
+								<br>
+								<a href="../../logout.php" class="genric-btn primary radius">KELUAR</a>
                             </div>
 						</article>
 					</div>
