@@ -79,7 +79,7 @@
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="blog.html" class="nav-link">Bantuan</a>
+                                        <a href="bantuan.php" class="nav-link">Bantuan</a>
                                     </li>
                                 </ul>
                                 <div class="header_social_icon d-none d-lg-block">
@@ -129,8 +129,6 @@
                                     <h1><b><font face="century gothic">SURAT SUARA PEMILIHAN UMUM</font></b></h1>
                                     <h2><font face="century gothic">KETUA <?php echo $data['nama_dpt'];?> RW 01 TAHUN 2019</font></h2>
                                     <div class="row">
-                                        <br>
-                                        <br>
                                         <?php
 
                                             $id_dpt = $_SESSION['id_dpt'];
@@ -143,7 +141,7 @@
                                                 $misi = $data['misi'];
                                                 $id_dpt = $data['id_dpt'];
                                                 $foto = $data['foto']; ?>
-                                            <div class="col-md-4 offset-sm-1">
+                                            <div class="col-md-6">
                                                 <div class="card">
                                                     <img src="../../asset/img/<?php echo $foto; ?>" class="card-img-top" alt="gambar"  width="150px" height="400px">
                                                     <div class="card-body">
@@ -157,10 +155,10 @@
                                     </div>
                                     <form class="pilih" action="prosesrt.php?act=insert" method="post">
                                         <div class="row">
-                                            <div class="col-md-4 offset-sm-1">
+                                            <div class="col-md-6">
                                                 <input type='radio' class="primary-radio" name='pilihan' value='01'>
                                             </div>
-                                            <div class="col-md-4 offset-sm-1">
+                                            <div class="col-md-6">
                                                 <input type='radio' class="primary-radio" name='pilihan' value='02'>
                                             </div>
                                         </div>
@@ -168,10 +166,6 @@
                                         <input type="submit" class="genric-btn primary circle" name="simpan" value="KIRIM SUARA"></td>
                                     </form>   
                                 </center>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
                                 <br>
                                 <br>
 						    </div>

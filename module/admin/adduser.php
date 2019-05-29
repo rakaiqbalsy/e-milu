@@ -79,7 +79,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="blog.html" class="nav-link">Bantuan</a>
+                                    <a href="add.user.php" class="nav-link">DPT</a>
                                 </li>
                             </ul>
                             <div class="header_social_icon d-none d-lg-block">

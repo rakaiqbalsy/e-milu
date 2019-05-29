@@ -115,15 +115,15 @@
 <!-- Header part end-->
 
 <!-- Content -->
-<section class="breadcrumb">
+<section class="breadcrumb breadcrumb_bg">
     <div class="container">
-        <div class="row">
+        <div class="row bg-white">
             <!-- <div class="col-lg-12"> -->
                 <!-- <div class="breadcrumb_iner"> -->
                     <!-- <div class="breadcrumb_iner_item">  -->
                         <!-- <div class="col-lg-8 col-md-8"> -->
                             <div class="col-md-12">
-                                <h1 class="calon">Calon Ketua RW</h1>
+                                <h1 class="calon">CALON KETUA RW 1</h1>
                                 <hr>
                             </div>
                             <?php
@@ -135,7 +135,7 @@
                                 $misi = $data['misi'];
                                 $foto = $data['foto']; ?>
 
-                                <div class="col-md-4 offset-sm-1">
+                                <div class="col-md-6">
                                     <div class="card">
                                         <img src="../../asset/img/<?php echo $foto; ?>" class="card-img-top" alt="gambar" width="150px" height="400px">
                                     <div class="card-body">
@@ -162,21 +162,21 @@
 
 <!-- End Content -->
 <!-- footer part start-->
-    <footer class="copyright_part">
-        <div class="container">
-            <div class="row align-items-center">
-                <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<footer class="copyright_part">
+    <div class="container">
+        <div class="row align-items-center">
+            <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | MelekTech </a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
-                    <a href="#"><i class="ti-facebook"></i></a>
-                    <a href="#"> <i class="ti-twitter"></i> </a>
-                    <a href="#"><i class="ti-instagram"></i></a>
-                    <a href="#"><i class="ti-skype"></i></a>
-                </div>
+            <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"> <i class="ti-twitter"></i> </a>
+                <a href="#"><i class="ti-instagram"></i></a>
+                <a href="#"><i class="ti-skype"></i></a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
     <!-- footer part end-->
 
     <!-- jquery plugins here-->
