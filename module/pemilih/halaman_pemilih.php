@@ -27,11 +27,16 @@
 <body>
 
 	<?php 
+
+		include_once("../../config/koneksi.php");
+
 		session_start();
 		// cek apakah yang mengakses halaman ini sudah login
 		if($_SESSION['level']==""){
 			header("location:../../../index.php?pesan=gagal");
 		}
+
+		
 	?>
 
 
@@ -118,11 +123,20 @@
 							<div class="blog_details  bg-white">
                             	<h2><font  color="black" face="century gothic"><i>Selamat datang</i> <b><?php echo $_SESSION['nik']; ?></font></b></h2>
                             	<p align="justify">E-Voting atau <i>Electronic Voting</i> merupakan aplikasi karya anak bangsa yang dimanfaatkan untuk Pemilihan Umum Serentak RT/RW Tahun 2019, aplikasi ini merupakan bentuk kemajuan demokrasi bangsa indonesia dengan aplikasi ini proses demokrasi dapat di digitalisasi.</p>
+
+
+                            	<?php
+                            		$query = mysqli_query($koneksi,"SELECT * from user as A join dpt as B ON A.id_dpt = B.id_dpt");
+									$data = mysqli_fetch_assoc($query);
+									$nik = $data['nik'];	
+									$dpt = $data['nama_dpt'];
+
+                            	?>
                            		<p><b>DATA DIRI ANDA</b>
-                                <br>Nomor Induk Kependudukan : <b><?php echo $_SESSION['nik']; ?></b>
-                                <br>Rukun Tetangga : <b><?php echo $_SESSION['id_dpt']; ?></b>
-                                <br>Rukun Warga : <b>01</b>
-                                <br>Status : <b><?php echo $_SESSION['level']; ?></b></p>
+                                <br>Nomor Induk Kependudukan 	: <b><?php echo $nik; ?></b>
+                                <br>Rukun Tetangga 				: <b><?php echo $data['nama_dpt']; ?></b>
+                                <br>Rukun Warga 				: <b>RW 01</b>
+                                <br>Status 						: <b><?php echo $_SESSION['level']; ?></b></p>
 								<br>
 								<br>
 								<a href="../../logout.php" class="genric-btn primary radius">KELUAR</a>
